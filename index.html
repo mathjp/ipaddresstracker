@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- IP Address Tracker Search for any IP address or domain IP Address Location
+    Timezone UTC -->
+    <!-- add offset value dynamically using the API -->
+    <!-- ISP -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <div class="container">
+      <div class="top">
+        <h3>IP Address Tracker</h3>
+        <div class="search-bar">
+          <div class="input-control">
+            <input
+              type="search"
+              name=""
+              id="searchInput"
+              class="form-control"
+              placeholder="Search by IP address"
+            />
+            <span id="searchFor">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+        <div class="search-result">
+          <div class="result-item">
+            <span>ip address</span>
+            <strong>192.212.174.101</strong>
+          </div>
+          <div class="result-item">
+            <span>location</span>
+            <strong>Brooklyn, NY 10001</strong>
+          </div>
+          <div class="result-item">
+            <span>timezone</span>
+            <strong>UTC -05:00</strong>
+          </div>
+          <div class="result-item">
+            <span>isp</span>
+            <strong>Space X Starlink</strong>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div id="map"></div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0x5BYxGgcXma3uVB24Xgj7UMGd4iliM4"
+      async
+    ></script>
+  </body>
+</html>
